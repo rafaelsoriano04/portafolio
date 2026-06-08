@@ -1,281 +1,381 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
-    <meta http-equiv="Rafael Soriano" content="Portafolio">
+    <title>Rafael Soriano — Ingeniero de Software Full Stack</title>
+    <meta name="description" content="Rafael Soriano — Ingeniero de Software Full Stack. Java, Spring Boot, Vue.js, AWS, Google Cloud, Docker, Cloudflare y CI/CD.">
+    <meta name="author" content="Rafael Soriano">
+    <meta property="og:title" content="Rafael Soriano — Desarrollador de Software Full Stack">
+    <meta property="og:description" content="Java · Spring Boot · Vue.js · AWS · Docker · CI/CD">
+    <meta property="og:type" content="website">
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
-            "@type": "WebSite",
+            "@type": "Person",
             "name": "Rafael Soriano",
-            "url": "https://rafaelsoriano.bss.design/"
+            "jobTitle": "Ingeniero de Software Full Stack",
+            "url": "https://rafaelsoriano.bss.design/",
+            "email": "raansopro324@gmail.com",
+            "address": "Ambato, Ecuador"
         }
     </script>
     <link rel="icon" type="image/png" sizes="256x256" href="assets/img/profile.png">
-    <link rel="icon" type="image/png" sizes="256x256" href="assets/img/profile.png" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/png" sizes="256x256" href="assets/img/profile.png">
-    <link rel="icon" type="image/png" sizes="256x256" href="assets/img/profile.png" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/png" sizes="256x256" href="assets/img/profile.png">
-    <link rel="icon" type="image/png" sizes="256x256" href="assets/img/profile.png">
-    <link rel="icon" type="image/png" sizes="900x650" href="assets/img/portfolio/cabin.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
-    <nav class="navbar navbar-expand-lg fixed-top bg-secondary text-uppercase navbar-light" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="#page-top">Rafael Soriano</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#inicio">Inicio</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#proyectos">Proyectos</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#experiencia">Experiencia</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="indexIngles.html" style="text-decoration:  underline;">Inglés</a></li>
-                </ul>
-            </div>
+<body id="page-top">
+    <nav class="nav" id="mainNav">
+        <div class="nav-inner">
+            <a class="brand" href="#page-top"><span class="dot"></span><span class="brand-name">Rafael Soriano</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menú"><i class="fa fa-bars"></i></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#skills">Stack</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a class="lang" href="indexIngles.html">EN</a></li>
+                <li><a class="nav-cta" href="CV.pdf" download><i class="fa fa-download"></i> CV</a></li>
+            </ul>
         </div>
     </nav>
-    <header class="text-center text-white bg-primary masthead" id="inicio">
-        <div class="container"><img class="img-fluid d-block mx-auto mb-5" src="assets/img/profile.png">
-            <h1>Rafael Soriano</h1>
-            <hr class="star-light">
-            <h2 class="font-weight-light mb-0">Creo experiencias digitales perfectas, atractivas y precisas hasta el último píxel.</h2>
+
+    <header class="hero" id="inicio">
+        <div class="wrap">
+            <div class="hero-grid">
+                <div class="hero-intro">
+                    <span class="hero-badge"><span class="pulse"></span> Disponible para nuevos proyectos</span>
+                    <h1>Rafael <span class="accent-text">Soriano</span></h1>
+                    <p class="role">Ingeniero de Software <b>Full Stack</b></p>
+                    <p class="lead">Construyo aplicaciones web completas con Java, Spring Boot y Vue.js, las despliego en la nube con Docker y CI/CD, y me apasiona la inteligencia artificial y las soluciones que resuelven problemas reales.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#proyectos"><i class="fa fa-folder-open"></i> Ver proyectos</a>
+                        <a class="btn btn-ghost" href="#contacto"><i class="fa fa-paper-plane"></i> Contáctame</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/rafaelsoriano04" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa fa-github"></i></a>
+                        <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        <a href="mailto:raansopro324@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-portrait">
+                    <div class="ring"></div>
+                    <img src="assets/img/profile.png" alt="Rafael Soriano">
+                    <div class="float-card one">
+                        <i class="fa fa-code"></i>
+                        <div><span class="num">Full Stack</span><span class="lbl">Java · Vue.js</span></div>
+                    </div>
+                    <div class="float-card two">
+                        <i class="fa fa-cloud"></i>
+                        <div><span class="num">Cloud &amp; DevOps</span><span class="lbl">Docker · CI/CD</span></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-    <section id="proyectos" class="portfolio">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-secondary">Proyectos</h2>
-            <hr class="star-dark mb-5">
-            <div class="row">
-                <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-1" data-bs-toggle="modal">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/api.png">
-                    </a></div>
-                <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-2" data-bs-toggle="modal">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/web.png">
-                    </a></div>
-                <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-3" data-bs-toggle="modal">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/factura.png">
-                    </a></div>
-            </div>
-        </div>
-    </section>
-    <section class="text-white bg-primary mb-0" id="experiencia">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-white">Experiencia</h2>
-            <hr class="star-light mb-5">
-            <div class="card-group" style="padding-bottom: 0px;margin-bottom: 50px;">
-                <div class="card"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/portfolio/java.png" width="311" height="160">
-                    <div class="card-body">
-                        <h4 class="card-title">Java</h4>
+
+    <section class="section" id="sobre-mi">
+        <div class="wrap">
+            <div class="about-grid reveal">
+                <div class="about-text">
+                    <span class="section-tag">Sobre mí</span>
+                    <h2 class="section-title">Ingeniero de Software full stack con experiencia real en producción</h2>
+                    <p>Soy <strong>Ingeniero de Software</strong> formado en la Universidad Técnica de Ambato. Desarrollo aplicaciones web full stack para clientes locales e internacionales y las llevo hasta producción con despliegues en la nube.</p>
+                    <p>He participado en proyectos de <strong>validación de identidad con AWS (prueba de vida)</strong>, sistemas de <strong>compra de firmas electrónicas</strong> con integración segura, y un módulo de gestión de proyectos de construcción para un cliente en <strong>Nueva York</strong>. Administro despliegues en <strong>Google Cloud, VPS y Cloudflare</strong>, con metodologías ágiles y CI/CD.</p>
+                    <div class="softskills">
+                        <span><i class="fa fa-users"></i>Liderazgo de equipos</span>
+                        <span><i class="fa fa-check-circle"></i>Disciplina y organización</span>
+                        <span><i class="fa fa-comments"></i>Comunicación efectiva</span>
+                        <span><i class="fa fa-lightbulb-o"></i>Pensamiento analítico</span>
                     </div>
                 </div>
-                <div class="card"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/portfolio/mysql.png" width="311" height="191">
-                    <div class="card-body">
-                        <h4 class="card-title">MySQL</h4>
-                    </div>
-                </div>
-                <div class="card"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/portfolio/postgres.png" width="311" height="160">
-                    <div class="card-body">
-                        <h4 class="card-title">PosgreSQL</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="card-group">
-                <div class="card"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/portfolio/html-css-js.png" width="311" height="160">
-                    <div class="card-body">
-                        <h4 class="card-title">HTML, CSS y JavaScript</h4>
-                    </div>
-                </div>
-                <div class="card"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/portfolio/vue.jpg" width="311" height="191">
-                    <div class="card-body">
-                        <h4 class="card-title">Vue.js</h4>
-                    </div>
-                </div>
-                <div class="card"><img class="img-fluid card-img-top w-100 d-block" src="assets/img/portfolio/spring-boot.jpeg" width="311" height="160">
-                    <div class="card-body">
-                        <h4 class="card-title">Spring Boot</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-4"></div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-secondary mb-0">contÁCTAME</h2>
-            <hr class="star-dark mb-5">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <form id="contactForm" name="sentMessage" data-bss-recipient="77358fe29de145ec02dec8c82887c141">
-                        <div class="control-group">
-                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="text" id="name" required="" placeholder="Name"><label class="form-label">Nombre</label><small class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div class="control-group">
-                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="email" id="email" required="" placeholder="Email Address"><label class="form-label">Correo electrónico</label><small class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div class="control-group"></div>
-                        <div class="control-group">
-                            <div class="mb-5 form-floating controls pb-2"><textarea class="form-control" id="message" required="" placeholder="Message" style="height: 150px;"></textarea><label class="form-label">Mensaje</label><small class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div id="success"></div>
-                        <div><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
-                    </form>
+                <div class="stats">
+                    <div class="stat"><div class="n accent-text">3+</div><div class="l">Años desarrollando software</div></div>
+                    <div class="stat"><div class="n accent-text">2</div><div class="l">Empresas / clientes</div></div>
+                    <div class="stat"><div class="n accent-text">🇺🇸</div><div class="l">Proyecto internacional (NY)</div></div>
+                    <div class="stat"><div class="n accent-text">☁️</div><div class="l">Despliegues en la nube</div></div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="text-center footer">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Ubicación</h4>
-                    <p>Ecuador</p>
+
+    <section class="section" id="skills" style="background: var(--bg-2);">
+        <div class="wrap">
+            <div class="reveal">
+                <span class="section-tag">Stack tecnológico</span>
+                <h2 class="section-title">Tecnologías con las que trabajo</h2>
+                <p class="section-lead">Del backend al despliegue: las herramientas que uso a diario para llevar una idea a producción.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="ico"><i class="fa fa-code"></i></div>
+                    <h3>Lenguajes &amp; Frameworks</h3>
+                    <div class="chips">
+                        <span class="chip">Java</span>
+                        <span class="chip">Spring Boot</span>
+                        <span class="chip">Vue.js</span>
+                        <span class="chip">Python</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">HTML &amp; CSS</span>
+                    </div>
                 </div>
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase">Social</h4>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://github.com/rafaelsoriano04"><i class="fa fa-github fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="#"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                <div class="skill-card reveal">
+                    <div class="ico"><i class="fa fa-cloud"></i></div>
+                    <h3>DevOps &amp; Nube</h3>
+                    <div class="chips">
+                        <span class="chip">Docker</span>
+                        <span class="chip">CI/CD · GitHub Actions</span>
+                        <span class="chip">AWS</span>
+                        <span class="chip">Google Cloud</span>
+                        <span class="chip">Cloudflare</span>
+                        <span class="chip">VPS (Linux)</span>
+                        <span class="chip">Nginx</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="ico"><i class="fa fa-database"></i></div>
+                    <h3>Datos &amp; Herramientas</h3>
+                    <div class="chips">
+                        <span class="chip">PostgreSQL</span>
+                        <span class="chip">MySQL</span>
+                        <span class="chip">SQL Server</span>
+                        <span class="chip">Git</span>
+                        <span class="chip">JUnit · Mockito</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="experiencia">
+        <div class="wrap">
+            <div class="reveal">
+                <span class="section-tag">Trayectoria</span>
+                <h2 class="section-title">Experiencia &amp; educación</h2>
+            </div>
+            <div class="timeline">
+                <div class="tl-item reveal">
+                    <div class="tl-head">
+                        <h3>Ingeniero de Software</h3>
+                        <span class="org">· FirmaseguraEC</span>
+                        <span class="tl-date">Ene 2026 — Actualidad · Ecuador</span>
+                    </div>
+                    <ul>
+                        <li>Desarrollo y mantenimiento de la plataforma de firma electrónica con Java, Spring Boot y Vue.js.</li>
+                        <li>Integraciones seguras para la emisión y compra de firmas electrónicas.</li>
+                        <li>Despliegue y operación de los servicios en la nube con Docker, CI/CD y Cloudflare.</li>
+                    </ul>
+                    <div class="tl-tags"><span>Java</span><span>Spring Boot</span><span>Vue.js</span><span>Firma electrónica</span><span>Cloud</span></div>
+                </div>
+                <div class="tl-item reveal">
+                    <div class="tl-head">
+                        <h3>Desarrollador de Software</h3>
+                        <span class="org">· Alquimiasoft</span>
+                        <span class="tl-date">Ene 2023 — Dic 2025 · Ecuador</span>
+                    </div>
+                    <ul>
+                        <li>Desarrollo de aplicaciones web full stack con Java, Spring Boot y Vue.js.</li>
+                        <li>Implementación de servicios de validación de identidad mediante AWS (prueba de vida).</li>
+                        <li>Participación en un sistema de compra de firmas electrónicas con integración segura.</li>
+                    </ul>
+                    <div class="tl-tags"><span>Java</span><span>Spring Boot</span><span>Vue.js</span><span>AWS</span></div>
+                </div>
+                <div class="tl-item reveal">
+                    <div class="tl-head">
+                        <h3>Desarrollador Freelance</h3>
+                        <span class="org">· Proyecto en EE.UU. (construcción)</span>
+                        <span class="tl-date">2025 · Remoto</span>
+                    </div>
+                    <ul>
+                        <li>Desarrollo de un módulo de gestión de proyectos de construcción para un cliente en Nueva York.</li>
+                        <li>Aplicación de metodologías ágiles y despliegue en la nube con Docker y CI/CD en GitHub Actions.</li>
+                    </ul>
+                    <div class="tl-tags"><span>Docker</span><span>CI/CD</span><span>GitHub Actions</span><span>Ágil</span></div>
+                </div>
+                <div class="tl-item reveal">
+                    <div class="tl-head">
+                        <h3>Infraestructura &amp; despliegues en la nube</h3>
+                        <span class="org">· DevOps</span>
+                        <span class="tl-date">2023 — Actualidad</span>
+                    </div>
+                    <ul>
+                        <li>Despliegue y administración de aplicaciones en <strong>Google Cloud</strong> y servidores <strong>VPS</strong> con Linux.</li>
+                        <li>Gestión de dominios, DNS, CDN, certificados SSL y seguridad con <strong>Cloudflare</strong>.</li>
+                        <li>Contenerización con Docker y configuración de Nginx como proxy inverso.</li>
+                        <li>Automatización de builds y despliegues con pipelines de CI/CD en GitHub Actions.</li>
+                    </ul>
+                    <div class="tl-tags"><span>Google Cloud</span><span>VPS</span><span>Cloudflare</span><span>Docker</span><span>Nginx</span><span>CI/CD</span></div>
+                </div>
+                <div class="tl-item reveal">
+                    <div class="tl-head">
+                        <h3>Ingeniería en Software</h3>
+                        <span class="org">· Universidad Técnica de Ambato</span>
+                        <span class="tl-date">2021 — 2025</span>
+                    </div>
+                    <ul>
+                        <li>Formación en ingeniería de software, arquitectura, bases de datos y metodologías de desarrollo.</li>
                     </ul>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="section" id="proyectos" style="background: var(--bg-2);">
+        <div class="wrap">
+            <div class="reveal">
+                <span class="section-tag">Portafolio</span>
+                <h2 class="section-title">Proyectos destacados</h2>
+                <p class="section-lead">Una selección de proyectos que reflejan cómo trabajo, desde APIs robustas hasta aplicaciones de escritorio.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal" data-bs-toggle="modal" data-bs-target="#portfolio-modal-1">
+                    <div class="project-thumb"><img src="assets/img/portfolio/api.png" alt="API REST Clientes/Sucursales"></div>
+                    <div class="project-body">
+                        <h3>API REST — Clientes / Sucursales</h3>
+                        <p>API REST construida con Spring Boot (Java 17) y PostgreSQL, con pruebas unitarias en JUnit y Mockito.</p>
+                        <div class="project-tags"><span>Spring Boot</span><span>Java 17</span><span>PostgreSQL</span><span>JUnit</span></div>
+                        <span class="project-link">Ver detalles <i class="fa fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-bs-toggle="modal" data-bs-target="#portfolio-modal-2">
+                    <div class="project-thumb"><img src="assets/img/portfolio/hotel.png" alt="Hotel Agave"></div>
+                    <div class="project-body">
+                        <h3>Sitio web — Hotel Agave</h3>
+                        <p>Página web responsive para un hotel, donde los clientes pueden visualizar instalaciones y servicios.</p>
+                        <div class="project-tags"><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>Responsive</span></div>
+                        <span class="project-link">Ver detalles <i class="fa fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-bs-toggle="modal" data-bs-target="#portfolio-modal-3">
+                    <div class="project-thumb"><img src="assets/img/portfolio/toyota.png" alt="Gestor de facturas e inventario"></div>
+                    <div class="project-body">
+                        <h3>Gestor de facturas e inventario</h3>
+                        <p>Sistema de escritorio para gestión de facturación, inventario y kardex con control de permisos.</p>
+                        <div class="project-tags"><span>Java</span><span>Swing</span><span>SQL Server</span><span>Azure</span></div>
+                        <span class="project-link">Ver detalles <i class="fa fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contacto">
+        <div class="wrap">
+            <div class="reveal">
+                <span class="section-tag">Contacto</span>
+                <h2 class="section-title">Hablemos de tu próximo proyecto</h2>
+                <p class="section-lead">¿Tienes una idea o una vacante? Estoy abierto a colaboraciones, prácticas y proyectos freelance.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-cards reveal">
+                    <a class="contact-card" href="mailto:raansopro324@gmail.com">
+                        <div class="ico"><i class="fa fa-envelope"></i></div>
+                        <div><div class="l">Correo</div><div class="v">raansopro324@gmail.com</div></div>
+                    </a>
+                    <a class="contact-card" href="tel:+593969244193">
+                        <div class="ico"><i class="fa fa-phone"></i></div>
+                        <div><div class="l">Teléfono</div><div class="v">+593 96 924 4193</div></div>
+                    </a>
+                    <div class="contact-card">
+                        <div class="ico"><i class="fa fa-map-marker"></i></div>
+                        <div><div class="l">Ubicación</div><div class="v">Ambato, Ecuador</div></div>
+                    </div>
+                    <a class="contact-card" href="https://github.com/rafaelsoriano04" target="_blank" rel="noopener">
+                        <div class="ico"><i class="fa fa-github"></i></div>
+                        <div><div class="l">GitHub</div><div class="v">rafaelsoriano04</div></div>
+                    </a>
+                </div>
+                <form class="contact-form reveal" id="contactForm" name="sentMessage" data-bss-recipient="77358fe29de145ec02dec8c82887c141">
+                    <div class="field control-group">
+                        <label class="form-label">Nombre</label>
+                        <input class="form-control" type="text" id="name" required placeholder="Tu nombre">
+                        <small class="form-text help-block"></small>
+                    </div>
+                    <div class="field control-group">
+                        <label class="form-label">Correo electrónico</label>
+                        <input class="form-control" type="email" id="email" required placeholder="tucorreo@ejemplo.com">
+                        <small class="form-text help-block"></small>
+                    </div>
+                    <div class="field control-group">
+                        <label class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" required placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                        <small class="form-text help-block"></small>
+                    </div>
+                    <div id="success"></div>
+                    <button class="btn btn-primary" id="sendMessageButton" type="submit"><i class="fa fa-paper-plane"></i> Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrap">
+            <a class="brand" href="#page-top"><span class="dot"></span><span class="brand-name">Rafael Soriano</span></a>
+            <div class="footer-socials">
+                <a href="https://github.com/rafaelsoriano04" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                <a href="mailto:raansopro324@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+            </div>
+            <small>© 2026 Rafael Soriano · Desarrollado con dedicación en Ambato, Ecuador</small>
+        </div>
     </footer>
-    <div class="text-center text-white copyright py-4">
-        <div class="container"><small>Rafael Soriano - 2024</small></div>
-    </div>
-    <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center d-block rounded text-white" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+
+    <a class="scroll-top" id="scrollTop" href="#page-top" aria-label="Ir arriba"><i class="fa fa-chevron-up"></i></a>
+
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
+                <div class="modal-header"><button class="btn-close" type="button" aria-label="Cerrar" data-bs-dismiss="modal"></button></div>
                 <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">API REST - CLIENTES/SUCURSALES</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/api.png">
-                                <p class="mb-5" style="margin-bottom: 23px;">Se desarrolló una API REST con la herramienta SpringBoot&nbsp;(Java 17) y con conexión a una base de datos local PostgreSQL. Además, se implementaron pruebas unitarias con JUnit y Mockito. La API permite la búsqueda, creación, eliminación y edición de clientes y sucursales de clientes.</p><a href="https://github.com/rafaelsoriano04/api-clientes-sucursales" style="font-style: italic;">Repositorio del proyecto aquí...</a>
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="accent-text">API REST — Clientes / Sucursales</h2>
+                    <img class="img-fluid" src="assets/img/portfolio/api.png" alt="API REST">
+                    <div class="modal-tags"><span>Spring Boot</span><span>Java 17</span><span>PostgreSQL</span><span>JUnit</span><span>Mockito</span></div>
+                    <p>Se desarrolló una API REST con Spring Boot (Java 17) y conexión a una base de datos PostgreSQL. Se implementaron pruebas unitarias con JUnit y Mockito. La API permite la búsqueda, creación, eliminación y edición de clientes y sus sucursales.</p>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close</a></div>
+                <div class="modal-footer"><a class="btn btn-primary" href="https://github.com/rafaelsoriano04/api-clientes-sucursales" target="_blank" rel="noopener"><i class="fa fa-github"></i> Ver repositorio</a></div>
             </div>
         </div>
     </div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
+                <div class="modal-header"><button class="btn-close" type="button" aria-label="Cerrar" data-bs-dismiss="modal"></button></div>
                 <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Página web - Hotel agave</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/hotel.png">
-                                <p class="mb-5">En este proyecto se desarrollo una página web para un hotel. Se construyó utilizando HTML, CSS y el framework Bootstrap. Su contenido es totalmente responsive. El objetivo de este proyecto es brindar al hotel un lugar en internet donde sus clientes puedan visualizar sus instalaciónes y servicios.</p><a href="https://gitlab.com/universidad4425415/paginaweb">Repositorio del proyecto aquí...</a>
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="accent-text">Sitio web — Hotel Agave</h2>
+                    <img class="img-fluid" src="assets/img/portfolio/hotel.png" alt="Hotel Agave">
+                    <div class="modal-tags"><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>Responsive</span></div>
+                    <p>Página web totalmente responsive desarrollada con HTML, CSS y Bootstrap. El objetivo fue brindar al hotel presencia en internet, donde sus clientes pueden visualizar las instalaciones y los servicios disponibles.</p>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Cerrar</a></div>
+                <div class="modal-footer"><a class="btn btn-primary" href="https://gitlab.com/universidad4425415/paginaweb" target="_blank" rel="noopener"><i class="fa fa-gitlab"></i> Ver repositorio</a></div>
             </div>
         </div>
     </div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-3">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
+                <div class="modal-header"><button class="btn-close" type="button" aria-label="Cerrar" data-bs-dismiss="modal"></button></div>
                 <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Gestor de facturas e inventario</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/toyota.png">
-                                <p class="mb-5">Este proyecto se desarrollo con Java y Java Swing, utiliza una sistema de gestion de base de datos SQL Server y base de datos SQL a través de servicios de Azure. Permite crear, modificar, buscar y eliminar: productos, clientes, proveedores, facturas, provincias, ciudades y usuarios con control de persmisos. Tambíen visualizar listado de ventas, listado de facturas y kardex.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="accent-text">Gestor de facturas e inventario</h2>
+                    <img class="img-fluid" src="assets/img/portfolio/toyota.png" alt="Gestor de facturas">
+                    <div class="modal-tags"><span>Java</span><span>Java Swing</span><span>SQL Server</span><span>Azure</span></div>
+                    <p>Aplicación de escritorio desarrollada con Java y Java Swing, con un sistema de gestión de base de datos SQL Server y SQL en la nube mediante Azure. Permite crear, modificar, buscar y eliminar productos, clientes, proveedores, facturas, provincias, ciudades y usuarios con control de permisos. También ofrece listados de ventas, facturas y kardex.</p>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Cerrar</a></div>
+                <div class="modal-footer"><a class="btn btn-ghost portfolio-modal-dismiss" role="button" data-bs-dismiss="modal"><i class="fa fa-close"></i> Cerrar</a></div>
             </div>
         </div>
     </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-4">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/game.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-5">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/safe.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-6">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/submarine.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
-            </div>
-        </div>
-    </div>
+
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/smart-forms.min.js"></script>
-    <script src="assets/js/freelancer.js"></script>
+    <script src="assets/js/portfolio.js"></script>
 </body>
 
 </html>
